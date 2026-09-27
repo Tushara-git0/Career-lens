@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHERIS | Advanced Bio-Recovery & Longevity Labs</title>
+  <meta name="description" content="Science-backed bio-hacking systems engineered for high-performance human biology. Circumvent physical boundaries and optimize cellular repair.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons for premium micro-UI indicators -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="#" class="logo">
+      AETHERIS<span>.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#science">Science</a></li>
+      <li><a href="#assessment">Protocol Assessment</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="cart-icon-btn" id="cartOpenBtn" aria-label="Open Cart">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="cta-btn" id="navQuizBtn">Take Bio-Assessment</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content scroll-reveal">
+      <div class="hero-tag">
+        <span>Circadian • Cellular • Cognitive</span>
+      </div>
+      <h1 class="hero-title">
+        THE BIOLOGY OF
+        <span>LONGEVITY.</span>
+      </h1>
+      <p class="hero-description">
+        Science-backed recovery systems engineered to optimize cellular repair, circadian rhythms, and cognitive endurance. Move beyond traditional boundaries.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="cta-btn cta-btn-filled">Explore Products</a>
+        <button class="cta-btn" id="heroQuizBtn">Start Assessment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Trust Banner -->
+  <section class="stats-banner scroll-reveal">
+    <div class="stat-item">
+      <div class="stat-num">98%</div>
+      <div class="stat-label">Circadian Realignment</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4.2x</div>
+      <div class="stat-label">Cellular Repair Rate</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">37%</div>
+      <div class="stat-label">ATP Production Increase</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Clinical Study Backed</div>
+    </div>
+  </section>
+
+  <!-- Products Showcase -->
+  <section class="products-section" id="products">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Flagship Systems</span>
+      <h2 class="section-title">Engineered Recovery Tools</h2>
+      <p>Precision laboratory instruments developed to target the fundamental mechanisms of age, fatigue, and cellular degradation.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Product 1: Somnus Shield -->
+      <div class="product-card scroll-reveal" id="prod-somnus">
+        <div class="product-img-wrapper">
+          <span class="product-badge">Circadian Regulation</span>
+          <img src="assets/somnus_shield.webp" alt="Somnus Circadian Shield Eye Mask" class="product-img" loading="lazy" decoding="async">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Somnus Circadian Shield</h3>
+          <p class="product-desc">Smart light therapy wearable emitting tailored optical frequencies to realign the circadian cycle, restoring REM and deep-stage restorative sleep patterns.</p>
+          <ul class="product-specs">
+            <li><span>Spectrum:</span> <span>480nm Cyan & 660nm Red</span></li>
+            <li><span>Sensors:</span> <span>Circadian Phase Tracking</span></li>
+            <li><span>Material:</span> <span>Premium Breathable Tech-Mesh</span></li>
+          </ul>
+          <div class="product-bottom">
+            <span class="product-price">$349</span>
+            <button class="cta-btn cta-btn-filled add-to-cart-btn" data-id="somnus" data-title="Somnus Circadian Shield" data-price="349" data-img="assets/somnus_shield.webp">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: PEMF Pulse Cell -->
+      <div class="product-card scroll-reveal" id="prod-pulse">
+        <div class="product-img-wrapper">
+          <span class="product-badge">Cellular Repair</span>
+          <img src="assets/pulse_cell.webp" alt="PEMF Pulse Cell Device" class="product-img" loading="lazy" decoding="async">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">PEMF Pulse Cell</h3>
+          <p class="product-desc">High-frequency Pulsed Electromagnetic Field device designed for deep muscle stimulation, speeding microcirculation and increasing raw cellular energy.</p>
+          <ul class="product-specs">
+            <li><span>Frequency Range:</span> <span>1Hz - 50Hz (Variable)</span></li>
+            <li><span>Power Intensity:</span> <span>Up to 150 Gauss</span></li>
+            <li><span>Battery Life:</span> <span>8 hours active charge</span></li>
+          </ul>
+          <div class="product-bottom">
+            <span class="product-price">$599</span>
+            <button class="cta-btn cta-btn-filled add-to-cart-btn" data-id="pulse" data-title="PEMF Pulse Cell" data-price="599" data-img="assets/pulse_cell.webp">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Neuro-Elixir Nootropic -->
+      <div class="product-card scroll-reveal" id="prod-neuro">
+        <div class="product-img-wrapper">
+          <span class="product-badge">Cognitive Synergy</span>
+          <img src="assets/neuro_elixir.webp" alt="Aetheris Neuro-Elixir Bottle" class="product-img" loading="lazy" decoding="async">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Neuro-Elixir Nootropic</h3>
+          <p class="product-desc">An advanced lipid-nanoparticle emulsion delivering high-potency adaptogens, peptide co-factors, and marine elements for neuro-focus and mental energy.</p>
+          <ul class="product-specs">
+            <li><span>Formulation:</span> <span>Liposomal Delivery</span></li>
+            <li><span>Key Actives:</span> <span>L-Theanine, NAD+ Precursor</span></li>
+            <li><span>Volume:</span> <span>50ml (30 Day Protocol)</span></li>
+          </ul>
+          <div class="product-bottom">
+            <span class="product-price">$129</span>
+            <button class="cta-btn cta-btn-filled add-to-cart-btn" data-id="neuro" data-title="Neuro-Elixir Nootropic" data-price="129" data-img="assets/neuro_elixir.webp">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science & Technology Tabbed Section -->
+  <section class="science-section" id="science">
+    <div class="science-container">
+      <div class="science-visual scroll-reveal">
+        <div class="lab-matrix"></div>
+        <div class="atom-orb"></div>
+        <div class="atom-core">BIO</div>
+      </div>
+
+      <div class="science-details scroll-reveal">
+        <span class="section-tag">Mechanism of Action</span>
+        <h2 class="section-title">The Science Behind Aetheris</h2>
+        
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="tab-circadian">Circadian Rhythm</button>
+          <button class="tab-btn" data-tab="tab-pemf">PEMF Tech</button>
+          <button class="tab-btn" data-tab="tab-liposome">Liposome Stack</button>
+        </div>
+
+        <div id="tab-circadian" class="tab-content active">
+          <h3>Circadian Synchronization</h3>
+          <p>By simulating specific solar spectrum frequencies (cyan 480nm for suppression of melatonin and red 660nm for natural cellular recovery triggers), the Somnus system realigns the pineal gland output, correcting fragmented sleeping patterns at a clinical level.</p>
+          <div class="science-specs">
+            <div class="sci-spec-item">
+              <h4>Active Suppression</h4>
+              <p>Blocks daytime grogginess by signaling daytime hormones.</p>
+            </div>
+            <div class="sci-spec-item">
+              <h4>Melatonin Rebound</h4>
+              <p>Promotes intense deep sleep phases on mask release.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-pemf" class="tab-content">
+          <h3>PEMF Resonance Repair</h3>
+          <p>Pulsed Electromagnetic Fields penetrate deep cellular walls to restore resting membrane potential (-70mV). Energized cell membranes accelerate ion transport, drawing nutrients in and expelling waste from cellular inflammation zones.</p>
+          <div class="science-specs">
+            <div class="sci-spec-item">
+              <h4>Ion Channels</h4>
+              <p>Stimulates cellular metabolic rate and sodium-potassium pumps.</p>
+            </div>
+            <div class="sci-spec-item">
+              <h4>Muscle Recovery</h4>
+              <p>Halves physical down-time and increases blood microcirculation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-liposome" class="tab-content">
+          <h3>Liposomal Nootropic Delivery</h3>
+          <p>Traditional supplements degrade in digestive tracts. Aetheris encases bio-nutrients in microscopic lipid bilayers (liposomes). These mirror human cell membranes, allowing active molecules to bypass digestion and enter systemic circulation instantly.</p>
+          <div class="science-specs">
+            <div class="sci-spec-item">
+              <h4>90%+ Bioavailability</h4>
+              <p>Maximum nutrient absorption straight to the cellular level.</p>
+            </div>
+            <div class="sci-spec-item">
+              <h4>Cognitive Catalyst</h4>
+              <p>Fuels oxygen uptake and neurotransmitter production.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio-Longevity Assessment Banner -->
+  <section class="assessment-banner" id="assessment">
+    <div class="assessment-card scroll-reveal">
+      <span class="section-tag" style="color: var(--accent-jade)">Personalized Optimization</span>
+      <h2>Tailored Protocol Builder</h2>
+      <p>Discover which bio-hacking recovery matrix aligns with your cellular requirements, lifestyle stresses, and performance targets.</p>
+      <button class="cta-btn cta-btn-filled" id="startQuizBtn">Start Bio-Assessment</button>
+    </div>
+  </section>
+
+  <!-- Quiz Modal Overlay -->
+  <div class="quiz-overlay" id="quizOverlay">
+    <div class="quiz-container">
+      <button class="quiz-close" id="quizCloseBtn">&times;</button>
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress" id="quizProgress"></div>
+      </div>
+
+      <!-- Step 1: Goal selection -->
+      <div class="quiz-step active" data-step="1">
+        <h3 class="quiz-question">1. What is your primary physiological bottleneck?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="sleep">Restless sleep, poor morning energy, and erratic schedule</button>
+          <button class="quiz-option" data-value="physical">Muscle fatigue, long workout recovery times, and joint stiffness</button>
+          <button class="quiz-option" data-value="focus">Brain fog, cognitive fatigue under stress, and lack of mental endurance</button>
+        </div>
+        <div class="quiz-nav">
+          <span></span> <!-- empty to push button right -->
+          <button class="cta-btn quiz-next-btn" disabled>Next Step</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Stress level -->
+      <div class="quiz-step" data-step="2">
+        <h3 class="quiz-question">2. Rate your average daily mental and physical load:</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="high">Extreme (Intense training or high-stress executive work)</button>
+          <button class="quiz-option" data-value="medium">Moderate (Consistent work hours and regular weekly exercise)</button>
+          <button class="quiz-option" data-value="low">Low (Balanced desk job with focused recovery routines)</button>
+        </div>
+        <div class="quiz-nav">
+          <button class="cta-btn quiz-prev-btn">Back</button>
+          <button class="cta-btn quiz-next-btn" disabled>Next Step</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Sleep quality -->
+      <div class="quiz-step" data-step="3">
+        <h3 class="quiz-question">3. How many hours of restorative sleep do you log?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-value="poor">Under 6 hours / Frequently waking up during the night</button>
+          <button class="quiz-option" data-value="average">6 to 8 hours / Sleeping but waking up slightly sluggish</button>
+          <button class="quiz-option" data-value="good">8+ hours / Highly restorative, structured sleep schedule</button>
+        </div>
+        <div class="quiz-nav">
+          <button class="cta-btn quiz-prev-btn">Back</button>
+          <button class="cta-btn quiz-next-btn" disabled>Generate Protocol</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Results (Dynamic recommendations) -->
+      <div class="quiz-step" data-step="4" id="quizResultStep">
+        <div class="recommendation-screen">
+          <span class="rec-title">Assessment Results</span>
+          <h3 class="quiz-question" style="margin-bottom: 10px;" id="recTitle">Circadian Restoration Protocol</h3>
+          <p id="recDesc">Your profiles suggests circadian disruption is causing cellular fatigue. We recommend targeting sleep alignment first.</p>
+          
+          <div class="rec-product-card">
+            <img src="assets/somnus_shield.webp" alt="Recommended Product" class="rec-product-img" id="recImg">
+            <div class="rec-product-details">
+              <h4 id="recProdName">Somnus Circadian Shield</h4>
+              <p id="recProdDesc">Smart sleep optimizer designed to correct melatonin and cortisol timing.</p>
+            </div>
+            <div class="rec-price" id="recPrice">$349</div>
+          </div>
+
+          <div style="display: flex; gap: 15px; justify-content: center;">
+            <button class="cta-btn cta-btn-filled" id="recAddBtn">Add Protocol to Cart</button>
+            <button class="cta-btn" id="recCloseBtn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer Overlay -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your Laboratory Cart</h2>
+      <button class="cart-close-btn" id="cartCloseBtn">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItemsContainer">
+      <!-- Empty message or items rendered dynamically -->
+      <div class="empty-cart-message">
+        <i data-lucide="flask-conical" style="width: 48px; height: 48px; margin-bottom: 15px; stroke-width: 1;"></i>
+        <p>No active bio-protocols in your cart.</p>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-totals">
+        <span>Protocol Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="cta-btn cta-btn-filled cart-checkout-btn" id="checkoutBtn" disabled>Initialize Checkout</button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">AETHERIS<span>.</span></a>
+        <p>Engineering premium recovery technologies to extend healthspan and unlock physical potential.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Systems</h4>
+        <ul>
+          <li><a href="#products">Somnus Shield</a></li>
+          <li><a href="#products">Pulse Cell</a></li>
+          <li><a href="#products">Neuro-Elixir</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Labs</h4>
+        <ul>
+          <li><a href="#science">Circadian Biology</a></li>
+          <li><a href="#science">PEMF Research</a></li>
+          <li><a href="#science">Clinical Trials</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Subscribe to Dispatch</h4>
+        <p>Receive peer-reviewed science breakdowns and protocol updates.</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to Aetheris dispatch updates.'); this.reset();">
+          <input type="email" class="newsletter-input" placeholder="laboratory@domain.com" required>
+          <button type="submit" class="newsletter-submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aetheris Labs Inc. All rights reserved.</p>
+      <p>These products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
